@@ -1,17 +1,14 @@
 type Props = {
   children: React.ReactNode
   className: string
-  linkClassName: string
 }
 
 export const Button: React.FC<Props> = (props) => {
-  const { className, children, linkClassName } = props
+  const { className, children } = props
 
   return (
-    <button className={`rounded-button duration-200 ${className}`}>
-      <a href="#" className={`block h-full w-full ${linkClassName}`}>
-        {children}
-      </a>
-    </button>
+    <a href="#" role="button" className={`block rounded-button duration-200 ${className}う`}>
+      {children}
+    </a>
   )
 }

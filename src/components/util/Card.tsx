@@ -1,5 +1,3 @@
-import { Button } from "./Button";
-
 type Props = {
   className?: string
   content?: string;

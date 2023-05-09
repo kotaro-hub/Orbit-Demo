@@ -28,11 +28,9 @@ export const Foundation = () => {
           title="Spacing"
         />
       </div>
-      <div className="mt-8 text-right">
-        <Button className="ml-auto text-center text-secondary w-9.5rem h-3.25rem bg-primary bg-opacity-10 hover:bg-hoverGreeenBg hover:text-hoverColor" linkClassName="leading-13">
-          See all items
-        </Button>
-      </div>
+      <Button className="mt-8 ml-auto text-center text-secondary w-9.5rem h-3.25rem bg-primary bg-opacity-10 leading-13 hover:bg-hoverGreeenBg hover:text-hoverColor">
+        See all items
+      </Button>
     </section>
   )
 }

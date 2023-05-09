@@ -8,11 +8,11 @@ export const Intro = () => {
         <div className="absolute top-0 z-10 flex flex-col h-full p-16 lg:p-0 lg:static">
           <h1 className="text-5xl font-bold leading-tight">Open source design system<br className="md:hidden" /> for your next travel project.</h1>
           <div className="flex gap-4 mt-15 sm:flex-col">
-            <Button className="relative w-40 h-16 text-white bg-primary hover:bg-hoverPrimary" linkClassName="leading-16 pl-7 text-left">
+            <Button className="relative w-40 h-16 text-white bg-primary leading-16 pl-7 text-left hover:bg-hoverPrimary">
               <span className={`material-symbols-outlined absolute top-5 right-2`}>arrow_right_alt</span>
               Get started
             </Button>
-            <Button className="relative w-56 h-16 bg-primary bg-opacity-10 text-primary hover:bg-hoverGreeenBg hover:text-hoverColor" linkClassName="leading-16 pl-7 text-center">
+            <Button className="relative w-56 h-16 bg-primary bg-opacity-10 text-primary leading-16 pl-7 text-center hover:bg-hoverGreeenBg hover:text-hoverColor">
               <span className={`material-symbols-outlined absolute top-5 left-6 font-bold text-secondary`}>search</span>
               <span className="font-medium text-secondary">Search</span> + Shift + K
             </Button>

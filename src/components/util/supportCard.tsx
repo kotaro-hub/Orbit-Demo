@@ -5,14 +5,13 @@ type Props = {
   btnContent: string
   className: string
   content: string
-  linkClassName: string
   iconSrc: string
   iconBg: string
   title: string
 }
 
 export const SupportCard: React.FC<Props> = (props) => {
-  const { btnClassName, btnContent, className, content, linkClassName, iconSrc, iconBg, title } = props
+  const { btnClassName, btnContent, className, content, iconSrc, iconBg, title } = props
 
   return (
     <a href="#" className={`block p-8 text-white rounded-2xl group duration-200 hover:shadow-lg sm:h-auto ${className}`}>
@@ -25,7 +24,7 @@ export const SupportCard: React.FC<Props> = (props) => {
         </h3>
         <p className="h-20 basis-full sm:h-auto">{content}</p>
         <div className="flex justify-between basis-full sm:items-center sm:flex-col">
-          <Button className={`h-3.25rem ${btnClassName}`} linkClassName={linkClassName}>{btnContent}</Button>
+          <Button className={`h-3.25rem text-center leading-13 ${btnClassName}`}>{btnContent}</Button>
           <img src={iconSrc} alt="#" height="32" width="32" className="sm:mt-4" />
         </div>
       </div>
